@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;    
     box-sizing: border-box;
+    font-family: 'Old Standard TT', serif;
 }
 ul{
     list-style: none; 
@@ -25,9 +26,44 @@ ul{
 .nav{
     display: flex;
     gap: 2rem;
-    margin-right: 5rem;
+    margin-right: 7rem;
 }
 .brand-logo{
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
+.content-container{
+    width: 218vh;
+    height: 87vh;    
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-container{
+    background-color: #E6CFED;
+    width: 180vh;
+    height: 70vh;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container{   
+   
+    background-color: #f9fafb;
+    width: 165vh;
+    height: 58vh;
+    border-radius: 5px;
+    text-align: center;
+}
+.book-tabs{
+    border: 1px solid black;
+    width: 40vh;
+    height: 58vh;
+}
+
+    
 
