@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+ul{
+    list-style: none; 
+    
+}
+:root {
+
+    --primary-color: #7F4395;
+    --secondary-color: #F9b126;
+    --text-color-1 : #E6CFED;
+    --text-color-2 : #C8AFCF;
+}
+.navigation-container{
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: 23px;      
+}
+.nav{
+    display: flex;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+.brand-logo{
+    margin-left: 5rem;
+}
+
