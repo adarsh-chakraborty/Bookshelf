@@ -1,11 +1,3 @@
-
-
-console.log('Sending a fetch request');
-
-
-
-
-console.log('Done fetching data');
 let TEMPLATE = "";
 // 2
 // i = 0
@@ -17,7 +9,7 @@ let TEMPLATE = "";
  {
      for(let book of data)
  {
-     console.log("I is:",book, "Current title is:", book.book)    
+    
     TEMPLATE += `<div class="book-tabs">
                             <div class="book-image">
                                 <a href="#">
@@ -35,17 +27,18 @@ const booksGrid = document.querySelector('.grid-container');
 booksGrid.innerHTML = TEMPLATE;
  }
 
-
 fetchBooks();
 
 async function fetchBooks(){
-    const res = await fetch('https://bookshelf.gq/api/books', {
-        method: 'PUT'
-    });
+    const res = await fetch('https://bookshelf.gq/api/books') 
     const data = await res.json();
     code(data);
 
 }   
-
+document.getElementById('pageNum').addEventListener('click',()=>{
+    let clickData = pageNum.innerText;
+    console.log(clickData)
+    return clickData;
+})
 
 
